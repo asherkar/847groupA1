@@ -1,4 +1,4 @@
-//sample file from https://github.com/avm-ru-cs/cps847-w19/blob/master/ci_play/test.py
+#sample file from https://github.com/avm-ru-cs/cps847-w19/blob/master/ci_play/test.py
 
 import unittest
 
