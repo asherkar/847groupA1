@@ -12,9 +12,14 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  - pip install codecov
+  - pip install coverage
 # command to run tests
 script:
-  - pytest
+  - pytest -m unittest discover -v ./ # command to run unit test
+  - coverage run ./test.py # command to run code coverage
+after_success:
+  - codecov
 addons:
   # add our deploy server to known hosts
   # you can set environmental variable in Travis GUI:
